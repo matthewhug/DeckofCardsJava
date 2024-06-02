@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 public class DeckTest {
 
-    private final List<Card> TEST_CARDS = Arrays.asList(new Card(Suit.DIAMOND, FaceValue.ACE), new Card(Suit.HEART, FaceValue.ACE));
+    private final List<Card> TEST_CARDS = Arrays.asList(new Card(Suit.DIAMONDS, FaceValue.ACE), new Card(Suit.HEARTS, FaceValue.ACE));
 
     @Test
     public void testDeckAndGetUnsetCards() {
