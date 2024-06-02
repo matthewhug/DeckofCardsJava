@@ -19,6 +19,9 @@ import java.util.stream.Stream;
  */
 public class Deck {
 
+    /** NOTE: Used a List instead of a Set which would automatically prevent duplicates.
+     * Idea being that if later wanted to support games later wtih multiple decks less refactor for using a Set.
+     */
     private List<Card> cards;
 
     public Deck() {}
@@ -62,6 +65,9 @@ public class Deck {
      * combination of Suit and CardValue enums, and then shuffles the
      * deck by randomly removing cards from the unshuffled list and adding them to
      * the shuffled list. After shuffling, the deck is set to the new shuffled list of cards.
+     *
+     * <p> Shuffle is also using the Enums to construct the deck with the idea being for extensibility
+     *  if another card or new suit is added then only the Enums need to be updated and code and tests should work accordingly.
      */
     public void shuffle() {
         // For each combination of Suit and CardValue enums create a card object to add to the unshuffled Cards list.
