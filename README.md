@@ -31,6 +31,12 @@ This project demonstrates the implementation of a deck of cards using Java. It i
     ```
 
 ## Usage
-Run the main class to see the deck operations:
+Run the main class to interact with functionality from command line:
 ```bash
 mvn exec:java -Dexec.mainClass="org.example.deckofcardsjava.DeckofCardsJavaApplication"
+```
+
+Run tests:
+```bash
+mvn test
+```
